@@ -1,0 +1,302 @@
+/*
+  Laptop/Desktop styles
+
+  These rules apply to screens with width ≥ 992px.  They provide a spacious
+  layout, larger typography and balanced paddings similar to the provided
+  design.  Minor adjustments for tablet/mobile sizes can be found in
+  style‑tablet.css and style‑mobile.css.
+
+  In addition to the original styling, this stylesheet adds custom
+  presentations for the language, skill and education sections to match the
+  reference design.  The level bars for languages and skills are drawn as
+  small horizontal rectangles whose colour indicates the proficiency level.
+  The education section is displayed as a vertical timeline with circular
+  markers and connecting lines.
+*/
+
+/* Reset default margins on heading elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+/* Banner image fills half the viewport height on desktop and covers its container */
+#banner {
+  height: 50vh;
+  position: relative;
+  /* The gradient overlay darkens the background image for text contrast */
+  background-image: linear-gradient(rgba(56, 52, 52, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://tse4.mm.bing.net/th/id/OIP.lEFUazz3aw5FQ4MSZ8ca-gHaE7?w=315&h=315&c=7");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #f7f7f7;
+}
+
+.banner-content {
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Navigation bar inside the hero */
+header nav.navbar {
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.75);
+  border-top: 1px solid #dee2e6;
+}
+
+header .nav-link {
+  font-weight: 500;
+}
+
+/* Body background colour */
+body {
+  background-color: #ffffff;
+}
+
+/* Section headings */
+section > h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  border-bottom: 2px solid #0d6efd;
+  padding-bottom: 0.25rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Cards have a subtle border and shadow */
+.card {
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.card img {
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Buttons */
+#toggle-career-btn {
+  display: inline-block;
+}
+
+/* Footer style */
+footer {
+  font-size: 0.9rem;
+}
+
+footer i {
+  margin-right: 0.3rem;
+}
+
+/* Panels for email sign‑in and personal info */
+.sign,
+#Info {
+  background-color: #fdfdfd;
+}
+
+/* Style for invalid input field */
+.is-invalid {
+  border-color: #dc3545;
+}
+
+/* Certificate custom styles */
+.certificate-item {
+  border: 1px solid #e0e0e0;
+  border-radius: 0.25rem;
+  background-color: #ffffff;
+}
+
+/* Ensure images in certificate cards cover their container */
+.certificate-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* For medium screens and above, lay out certificate image and info side by side */
+@media (min-width: 768px) {
+  .certificate-item {
+    align-items: stretch;
+  }
+  .certificate-image {
+    flex: 0 0 40%;
+    max-width: 40%;
+    border-right: 1px solid #e0e0e0;
+  }
+  .certificate-info {
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+}
+
+/* On small screens, stack image above info and remove dividing line */
+@media (max-width: 767.98px) {
+  .certificate-item {
+    flex-direction: column;
+  }
+  .certificate-image {
+    border-right: none;
+    margin-bottom: 1rem;
+  }
+  .certificate-info {
+    max-width: 100%;
+  }
+}
+
+/* Horizontal divider between certificate rows */
+.certificate-divider {
+  border-top: 1px solid #e0e0e0;
+}
+
+.rounded-corner {
+  display: inline-block;
+  background-color: #199cdb;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  width: 50px;
+}
+
+.rounded-corner-big {
+  width: 80px;
+}
+
+.exp-bar {
+  width: 50px;
+  height: 2px;
+  background-color: var(--color-primary, #199cdb);
+  display: inline-block;
+}
+
+.fill {
+  background-color: rgba(0, 0, 0, 0.146);
+}
+
+/* Custom styles for language, skill and education sections */
+
+/* The level bars for language and skill items */
+.language-list .level-bars,
+.skill-list .level-bars {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.language-list .bar,
+.skill-list .bar {
+  width: 40px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #e0e0e0;
+  display: inline-block;
+}
+
+.language-list .bar.filled,
+.skill-list .bar.filled {
+  background-color: #199cdb;
+}
+
+/* Add vertical spacing between consecutive language and skill items */
+.language-item + .language-item,
+.skill-item + .skill-item {
+  margin-top: 1rem;
+}
+
+/* Education timeline */
+.education-timeline {
+  position: relative;
+}
+
+.education-timeline .edu-item {
+  position: relative;
+  padding-left: 32px;
+  margin-bottom: 1.5rem;
+}
+
+.education-timeline .edu-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #199cdb;
+}
+
+.education-timeline .edu-item::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 14px;
+  width: 2px;
+  height: calc(100% - 14px);
+  background-color: #199cdb;
+}
+
+/* Do not draw the connecting line after the last education entry */
+.education-timeline .edu-item:last-child::after {
+  display: none;
+}
+
+/* Size of custom telescope icon used in the hobbies section header */
+.telescope-icon {
+  /* Larger icon size on desktop to match the sample design */
+  height: 40px;
+  width: auto;
+  /* Lighten the icon so it blends more subtly like in the sample */
+  filter: brightness(0.6);
+}
+
+/*
+  Hobbies section styles
+
+  The hobbies in the CV are displayed horizontally, each with a circular icon
+  and a label underneath.  The circle has a coloured border matching the
+  accent used throughout the CV and centres the icon.  Labels are centred
+  below each icon.  On tablets and mobile the sizes are reduced in their
+  respective media stylesheets.
+*/
+.hobby-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.hobby-item {
+  flex: 1;
+  text-align: center;
+}
+.hobby-icon {
+  width: 50px;
+  height: 50px;
+  /* Use a teal accent for hobbies icons similar to the sample */
+  border: 2px solid #20c997;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Use a green accent for hobbies icons to match the sample */
+  color: #20c997;
+  margin: 0 auto;
+  margin-bottom: 0.25rem;
+}
+.hobby-icon i {
+  font-size: 1.25rem;
+}
+.hobby-item span {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+  /* Darken the label text for better contrast and to match the sample */
+  color: #212529;
+}

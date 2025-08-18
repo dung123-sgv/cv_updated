@@ -1,0 +1,67 @@
+/*
+  Mobile phone styles
+
+  These rules apply to small screens (< 768px).  Layout stacks vertically,
+  fonts shrink, and paddings are reduced for a comfortable mobile experience.
+  Bars for skills and languages are narrower to fit the limited width.
+*/
+
+/* Shorter hero section */
+#banner {
+  height: 280px;
+  background-position: top center;
+}
+
+/* Adjust banner text sizes */
+#banner .banner-content h1 {
+  font-size: 2rem;
+}
+
+#banner .banner-content span {
+  font-size: 1rem;
+}
+
+/* Navigation bar adapts to mobile: smaller font and spacing */
+header .nav-link {
+  font-size: 0.85rem;
+  padding: 0.5rem 0.4rem;
+}
+
+/* Smaller card image */
+.card img {
+  height: 130px;
+}
+
+/* Reduce section heading size */
+section > h2 {
+  font-size: 1.25rem;
+}
+
+/* Footer font size */
+footer {
+  font-size: 0.75rem;
+}
+
+/* Shrink language and skill bars further on mobile */
+.language-list .bar,
+.skill-list .bar {
+  width: 30px;
+}
+
+/* Shrink hobby icon sizes on mobile */
+.hobby-icon {
+  width: 40px;
+  height: 40px;
+}
+.hobby-icon i {
+  font-size: 1rem;
+}
+.hobby-item span {
+  font-size: 0.75rem;
+}
+
+/* Reduce telescope icon size on mobile */
+.telescope-icon {
+  /* Reduce telescope size further on mobile */
+  height: 28px;
+}

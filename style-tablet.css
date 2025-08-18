@@ -1,0 +1,62 @@
+/*
+  Tablet styles
+
+  These rules override desktop styles for medium screens (768px ≤ width < 992px).
+  They tighten spacing and reduce element sizes to better fit tablets.  In
+  addition to the base styles, this file slightly reduces the width of the
+  language and skill bars to accommodate the narrower viewport.
+*/
+
+/* Reduce hero height on tablets */
+#banner {
+  height: 350px;
+  background-position: top center;
+}
+
+/* Adjust card image height */
+.card img {
+  height: 150px;
+}
+
+/* Reduce section heading size */
+section > h2 {
+  font-size: 1.5rem;
+}
+
+/* Scale down text inside the banner overlay */
+#banner .banner-content h1 {
+  font-size: 2.5rem;
+}
+
+#banner .banner-content span {
+  font-size: 1.25rem;
+}
+
+/* Footer font size */
+footer {
+  font-size: 0.8rem;
+}
+
+/* Shrink language and skill bars on tablets */
+.language-list .bar,
+.skill-list .bar {
+  width: 35px;
+}
+
+/* Shrink hobby icon sizes on tablets */
+.hobby-icon {
+  width: 44px;
+  height: 44px;
+}
+.hobby-icon i {
+  font-size: 1.1rem;
+}
+.hobby-item span {
+  font-size: 0.8rem;
+}
+
+/* Reduce telescope icon size on tablets */
+.telescope-icon {
+  /* Slightly reduced telescope size on tablets */
+  height: 34px;
+}

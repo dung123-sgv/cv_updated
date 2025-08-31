@@ -6,7 +6,8 @@
   addition to the base styles, this file slightly reduces the width of the
   language and skill bars to accommodate the narrower viewport.
 */
-
+@media (max-width: 500px) {
+}
 /* Reduce hero height on tablets */
 #banner {
   height: 350px;

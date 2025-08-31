@@ -5,6 +5,8 @@
   fonts shrink, and paddings are reduced for a comfortable mobile experience.
   Bars for skills and languages are narrower to fit the limited width.
 */
+@media (max-width: 778px) {
+}
 
 /* Shorter hero section */
 #banner {

@@ -144,7 +144,7 @@
           <div class="p-4 border rounded d-none" id="Info">
             <h2 class="mb-3">Thông tin cá nhân</h2>
             <p class="text-secondary mb-1">
-              <span class="text-dark fw-bold">Ngày sinh:</span> 03/06/1994
+              <span class="text-dark fw-bold">Ngày sinh:</span> 15/05/1995
             </p>
             <p class="text-secondary mb-1">
               <span class="text-dark fw-bold">Giới tính:</span> Nam
@@ -160,7 +160,7 @@
               Nam
             </p>
             <p class="text-secondary mb-3">
-              <span class="text-dark fw-bold">Website:</span> www.canti.vn
+              <span class="text-dark fw-bold">Website:</span> www.dungth.vn
             </p>
             <div class="d-flex text-primary">
               <p class="me-2 mb-0"><i class="bi bi-twitter"></i></p>
@@ -173,222 +173,366 @@
       </section>
 
       <!-- Career Section: experience, activities, education, skills, languages, hobbies -->
-      <section id="career" class="mb-5">
-        <h2 class="mb-4">Thông Tin Nghề Nghiệp</h2>
-        <!-- Button to toggle visibility of all career details -->
-        <button id="toggle-career-btn" class="btn btn-secondary mb-4">
-          Ẩn/Hiện thông tin nghề nghiệp
-        </button>
-        <!-- Container for all career details; visible by default -->
-        <div id="career-details" class="row gy-4">
-          <!-- Experience -->
-          <div class="col-md-4">
-            <div class="p-3 border rounded h-100">
-              <h3 class="h5 mb-3">
-                <i class="bi bi-briefcase me-2"></i>Kinh nghiệm
-              </h3>
-              <ul class="list-unstyled">
-                <li class="mb-3">
-                  <strong>Full Stack Developer – Công ty Y</strong>
-                  <div class="text-muted">06/2022 –</div>
-                  <div class="rounded-corner rounded-corner-big">Hiện tại</div>
-                  <ul class="list-unstyled ms-3 mt-1">
-                    <li>
-                      Xây dựng, phát triển Website dựa trên thiết kế và yêu cầu
-                      đã có.
-                    </li>
-                    <li>
-                      Phân tích và thiết kế Database, sử dụng các hệ quản trị
-                      CSDL như MySQL, SQLServer…
-                    </li>
-                    <li>
-                      Sử dụng ngôn ngữ server‑side (Node.js) và client‑side
-                      (HTML, CSS, JavaScript) để xây dựng trang web.
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <strong>Web Designer – Công ty X</strong>
-                  <div class="text-muted">08/2017 – 06/2022</div>
-                  <ul class="list-unstyled ms-3 mt-1">
-                    <li>Thiết kế Website theo yêu cầu của khách hàng.</li>
-                    <li>Sử dụng các công cụ: Figma, Canva, PTS.</li>
-                  </ul>
-                </li>
-              </ul>
+      <div class="container">
+        <div
+          class="my-5 mx-0 justify-content-center align-item-center row gap-2"
+          id="Ly-lich"
+        >
+          <!--Experiment Section-->
+          <div
+            class="section-exp border p-4 pb-5 col-lg-3 col-md-4"
+            id="experience"
+          >
+            <div class="container d-flex justify-content-between">
+              <h2 class="section-title-exp fs-3">Kinh nghiệm</h2>
+              <h2 class="text-muted fs-2">
+                <!-- Use Bootstrap icon for briefcase to match the sample design -->
+                <i class="bi bi-briefcase"></i>
+              </h2>
             </div>
-          </div>
-          <!-- Activities -->
-          <div class="col-md-4">
-            <div class="p-3 border rounded h-100">
-              <h3 class="h5 mb-3">
-                <i class="bi bi-people-fill me-2"></i>Hoạt động
-              </h3>
-              <ul class="list-unstyled">
-                <li class="mb-3">
-                  <strong>FPT Edu Hackathon 2019</strong>
-                  <div class="text-muted">03/2019 – 05/2019</div>
-                  <ul class="list-unstyled ms-3 mt-1">
-                    <li>Giải 3 bảng A</li>
-                    <li>Đề tài: Trang web về phân loại rác thải.</li>
-                  </ul>
-                </li>
-                <li>
-                  <strong>Câu lạc bộ Z</strong>
-                  <div class="text-muted">08/2018 – 08/2019</div>
-                  <ul class="list-unstyled ms-3 mt-1">
-                    <li>Trưởng ban chuyên môn.</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- Education -->
-          <div class="col-md-4">
-            <div class="p-3 border rounded h-100">
-              <h3 class="h5 mb-3">
-                <i class="bi bi-mortarboard-fill me-2"></i>Học vấn
-              </h3>
-              <!-- Education timeline.  Each entry is represented as a node with
-                   a connecting line down the left side to create a simple
-                   vertical timeline. -->
-              <div class="education-timeline ms-2">
-                <div class="edu-item">
-                  <div class="edu-title fw-bold">FUNiX</div>
-                  <div class="edu-duration text-muted">02/2022 – 05/2022</div>
-                  <div class="edu-details ms-3 mt-1">
-                    <p class="mb-1">
-                      Tốt nghiệp chứng chỉ doanh nghiệp nhánh Full Stack.
+            <button
+              type="button"
+              class="btn text-muted ms-3 rounded-pill py-0"
+              data-bs-toggle="collapse"
+              data-bs-target="#info1"
+              id="viewMoreBtn"
+            >
+              View More
+            </button>
+            <div class="collapse" id="info1">
+              <ul class="ul-section-info list-unstyled ps-0">
+                <li class="li-section-info ms-4">
+                  <div class="ms-0">
+                    <h4 class="cont-title mb-2 mt-3 fw-light fs-6">
+                      lập trình game chuyên Nghiệp- đẫ từng có 2 năm kinh nghiệp
+                      tại mỹ ở công ty davidthompson
+                    </h4>
+                    <p class="time mx-0 my-2 text-secondary">
+                      06/2018 -
+                      <span
+                        class="text-white bg-primary border-none rounded px-2 py-1"
+                        >Hiện tại</span
+                      >
                     </p>
-                    <p class="mb-0">GPA: 9/10</p>
-                  </div>
-                </div>
-                <div class="edu-item">
-                  <div class="edu-title fw-bold">Cử nhân – Đại học FPT</div>
-                  <div class="edu-duration text-muted">08/2016 – 07/2019</div>
-                  <div class="edu-details ms-3 mt-1">
-                    <p class="mb-1">Chuyên ngành kỹ thuật phần mềm.</p>
-                    <p class="mb-0">GPA: 3.2/4</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Skills -->
-          <div class="col-md-4">
-            <div class="p-3 border rounded h-100">
-              <h3 class="h5 mb-3"><i class="bi bi-tools me-2"></i>Kỹ năng</h3>
-              <ul class="list-unstyled ms-2 skill-list">
-                <li class="skill-item">
-                  <span class="skill-name"
-                    ><strong>HTML/CSS:</strong> Fundamental</span
-                  >
-                  <div class="level-bars">
-                    <span class="bar filled"></span>
-                    <span class="bar filled"></span>
-                    <span class="bar"></span>
+                    <ul class="lst list-unstyled ps-0 text-secondary">
+                      <li>
+                        Tìm kiếm và đọc hiểu các tài liệu tiếng anh và tiếng
+                        nhật
+                      </li>
+                      <li>Thành thạo sử dụng các thiết bị chiếu xạ</li>
+                      <li>Phân tích số liệu ghi nhận được tại hiện trường</li>
+                      <li>
+                        Lập trình phần mềm tái tạo hình ảnh hạt nhân bằng C#
+                      </li>
+                    </ul>
                   </div>
                 </li>
-                <li class="skill-item">
-                  <span class="skill-name"
-                    ><strong>Javascript:</strong> Intermediate</span
-                  >
-                  <div class="level-bars">
-                    <span class="bar filled"></span>
-                    <span class="bar filled"></span>
-                    <span class="bar"></span>
-                  </div>
-                </li>
-                <li class="skill-item">
-                  <span class="skill-name"
-                    ><strong>NodeJS:</strong> Intermediate</span
-                  >
-                  <div class="level-bars">
-                    <span class="bar filled"></span>
-                    <span class="bar filled"></span>
-                    <span class="bar filled"></span>
-                  </div>
-                </li>
-                <li class="skill-item">
-                  <span class="skill-name"
-                    ><strong>Bootstrap 5:</strong> Fundamental</span
-                  >
-                  <div class="level-bars">
-                    <span class="bar filled"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
+                <li class="li-section-info ms-4">
+                  <div class="ms-0">
+                    <h4 class="cont-title mb-2 mt-3 fw-light fs-6">
+                      kiến trúc sư viên chuyên nghiệp - Công ty Ezequote
+                    </h4>
+                    <p class="time mx-0 my-2 text-secondary">
+                      07/2019 - 03/2024
+                    </p>
+                    <ul class="lst list-unstyled ps-0 text-secondary">
+                      <li>Thiết kế và dự toán khối lượng</li>
+                      <li>Thiết kế kết cấu nhà gỗ và nhà thép</li>
+                    </ul>
                   </div>
                 </li>
               </ul>
             </div>
           </div>
-          <!-- Languages -->
-          <div class="col-md-4">
-            <div class="p-3 border rounded h-100">
-              <h3 class="h5 mb-3">
-                <i class="bi bi-translate me-2"></i>Ngôn ngữ
-              </h3>
-              <ul class="list-unstyled ms-2 language-list">
-                <li class="language-item">
-                  <span class="language-name">Tiếng Anh – IELTS 7.0</span>
-                  <div class="level-bars">
-                    <span class="bar filled"></span>
-                    <span class="bar filled"></span>
-                    <span class="bar"></span>
+
+          <!--Education Section-->
+          <div class="section-edu border p-4 col-lg-3 col-md-4" id="education">
+            <div class="container d-flex justify-content-between">
+              <h2 class="section-title-edu fs-3">Học vấn</h2>
+              <h2 class="text-muted fs-2">
+                <!-- Use Bootstrap icon for pencil to match the sample design -->
+                <i class="bi bi-pencil"></i>
+              </h2>
+            </div>
+            <button
+              type="button"
+              class="btn text-muted ms-3 rounded-pill py-0"
+              data-bs-toggle="collapse"
+              data-bs-target="#info2"
+              id="viewMoreBtn"
+            >
+              View More
+            </button>
+            <div class="collapse" id="info2">
+              <ul class="ul-section-info list-unstyled ps-0">
+                <li class="li-section-info ms-4">
+                  <div class="ms-0">
+                    <h4 class="cont-title mb-2 mt-3 fw-light fs-6">Funix</h4>
+                    <p class="time mx-0 my-2 text-secondary">
+                      04/2024 -
+                      <span
+                        class="text-white bg-primary border-none rounded px-2 py-1"
+                        >Hiện tại</span
+                      >
+                    </p>
+                    <ul class="lst list-unstyled ps-0 text-secondary">
+                      <li>5 chứng chỉ của chương trình chuyển tiếp Đại học</li>
+                      <li>Đang học</li>
+                    </ul>
                   </div>
                 </li>
-                <li class="language-item">
-                  <span class="language-name">Tiếng Nhật – JLPT N5</span>
-                  <div class="level-bars">
-                    <span class="bar filled"></span>
-                    <span class="bar filled"></span>
-                    <span class="bar filled"></span>
+                <li class="li-section-info ms-4">
+                  <div class="ms-0">
+                    <h4 class="cont-title mb-2 mt-3 fw-light fs-6">
+                      Đại học Havard của mỹ
+                    </h4>
+                    <p class="time mx-0 my-2 text-secondary">
+                      09/2013 - 06/2017
+                    </p>
+                    <ul class="lst list-unstyled ps-0 text-secondary">
+                      <li></li>
+                        Tốt nghiệp ngành Vật Lý chuyên ngành Vật lý kỹ thuật Tốt
+                        nghiệp chuyên nghành tiếng anh và lập trình của đại học
+                        Havard
+                      </li>
+                      <li>
+                        Là giáo sư ngôn ngữ và lập trình của đại học Havard
+                        Chuyên nghiên cứu về ngôn ngữ tiếng anh và lập trình Đã
+                        đạt được 8.9 IELTS
+                      </li>
+
+                      <li>Điểm tốt nghiệp: 3.98/4</li>
+                    </ul>
                   </div>
                 </li>
               </ul>
             </div>
           </div>
-          <!-- Hobbies -->
-          <div class="col-md-4">
-            <div class="p-3 border rounded h-100">
-              <!-- Heading with telescope icon on the right to match the sample -->
-              <h3
-                class="h5 mb-3 d-flex justify-content-between align-items-center"
-              >
-                <span>Sở thích</span>
-                <!-- Use a custom telescope image extracted from the reference picture -->
-              </h3>
-              <!-- Hobbies rendered as individual items with circular icons and labels -->
-              <ul class="hobby-list">
+
+          <!--Activity Section-->
+          <div class="section-act border p-4 col-lg-3 col-md-4" id="activity">
+            <div class="container d-flex justify-content-between">
+              <h2 class="section-title-act fs-3">Hoạt động</h2>
+              <h2 class="text-muted fs-2">
+                <!-- Use Bootstrap icon for briefcase to match the sample design -->
+                <i class="bi bi-briefcase"></i>
+              </h2>
+            </div>
+            <button
+              type="button"
+              class="btn text-muted ms-3 rounded-pill py-0"
+              data-bs-toggle="collapse"
+              data-bs-target="#info3"
+              id="viewMoreBtn"
+            >
+              View More
+            </button>
+            <div class="collapse" id="info3">
+              <ul class="ul-section-info list-unstyled ps-0">
+                <li class="li-section-info ms-4">
+                  <div class="ms-0">
+                    <h4 class="cont-title mb-2 mt-3 fw-light fs-6">
+                      Đoàn thanh niên
+                    </h4>
+                    <p class="time mx-0 my-2 text-secondary">
+                      01/2023 - 12/2023
+                    </p>
+                    <ul class="lst list-unstyled ps-0 text-secondary">
+                      <li>Đoàn viên hoạt động xuất sắc nhất</li>
+                      <li>Giải nhất biểu diễn văn nghệ 30/4</li>
+                      <li>Giải nhất biểu diễn văn nghệ 30/4</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="li-section-info ms-4">
+                  <div class="ms-0">
+                    <h4 class="cont-title mb-2 mt-3 fw-light fs-6">
+                      Câu lạc bộ Hà Nội FC
+                    </h4>
+                    <p class="time mx-0 my-2 text-secondary">
+                      11/2021 - 03/2022
+                    </p>
+                    <ul class="lst list-unstyled ps-0 text-secondary">
+                      <li>Trưởng ban chuyên môn</li>
+                      <li>đội trưởng và thủ môn xuất sắc nhất vleauge  trong màu áo của hà nội fc</li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!--Hobby Section-->
+          <div class="section-hobby border p-4 col-lg-3 col-md-4" id="hobby">
+            <div class="container d-flex justify-content-between">
+              <h2 class="section-title-hobby fs-3">Sở thích</h2>
+              <h2 class="text-muted fs-2">
+                <!-- Use a gem icon for the hobbies section to reflect the sample -->
+                <i class="bi bi-gem"></i>
+              </h2>
+            </div>
+            <button
+              type="button"
+              class="btn text-muted ms-3 rounded-pill py-0"
+              data-bs-toggle="collapse"
+              data-bs-target="#info4"
+              id="viewMoreBtn"
+            >
+              View More
+            </button>
+            <div class="collapse" id="info4">
+              <!-- List of hobbies with circular icons matching the sample design -->
+              <ul class="hobby-list mt-4">
                 <li class="hobby-item">
-                  <div class="hobby-icon">
-                    <i class="bi bi-music-note"></i>
-                  </div>
+                  <div class="hobby-icon"><i class="bi bi-music-note"></i></div>
                   <span>Âm nhạc</span>
                 </li>
                 <li class="hobby-item">
-                  <div class="hobby-icon">
-                    <i class="bi bi-balloon"></i>
-                  </div>
-                  <span>Du lịch</span>
-                </li>
-                <li class="hobby-item">
-                  <div class="hobby-icon">
-                    <i class="bi bi-controller"></i>
-                  </div>
+                  <div class="hobby-icon"><i class="bi bi-controller"></i></div>
                   <span>Chơi game</span>
                 </li>
                 <li class="hobby-item">
-                  <div class="hobby-icon">
-                    <i class="bi bi-basket"></i>
-                  </div>
+                  <div class="hobby-icon"><i class="bi bi-airplane"></i></div>
+                  <span>Du lịch</span>
+                </li>
+                <li class="hobby-item">
+                  <!-- Use a basket icon for cooking to ensure compatibility -->
+                  <div class="hobby-icon"><i class="bi bi-basket"></i></div>
                   <span>Nấu ăn</span>
                 </li>
               </ul>
             </div>
           </div>
+
+          <!--Languages Section-->
+          <div class="section-lang border p-4 col-lg-3 col-md-4" id="language">
+            <div class="container d-flex justify-content-between">
+              <h2 class="section-title-lang fs-3">Ngoại ngữ</h2>
+              <h2 class="text-muted fs-2">
+                <!-- Use a microphone icon for the language section -->
+                <i class="bi bi-mic"></i>
+              </h2>
+            </div>
+            <button
+              type="button"
+              class="btn text-muted ms-3 rounded-pill py-0"
+              data-bs-toggle="collapse"
+              data-bs-target="#info5"
+              id="viewMoreBtn"
+            >
+              View More
+            </button>
+            <div class="collapse" id="info5">
+              <!-- Language list: show a grey baseline with a coloured bar representing proficiency -->
+              <div class="language-list mt-4">
+                <div class="language-item">
+                  <p>Tiếng Anh – IELTS 7.0</p>
+                  <div
+                    class="progress"
+                    style="height: 4px; background-color: #e0e0e0"
+                  >
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 80%; background-color: #199cdb"
+                    ></div>
+                  </div>
+                </div>
+                <div class="language-item">
+                  <p>Tiếng Nhật – JLPT N4</p>
+                  <div
+                    class="progress"
+                    style="height: 4px; background-color: #e0e0e0"
+                  >
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 50%; background-color: #199cdb"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Skill Section-->
+          <div class="section-skill border p-4 col-lg-3 col-md-4" id="skill">
+            <div class="container d-flex justify-content-between">
+              <h2 class="section-title-skill fs-3">Kỹ năng</h2>
+              <h2 class="text-muted fs-2">
+                <!-- Use a tools icon for the skills section to reflect crossed wrenches -->
+                <i class="bi bi-tools"></i>
+              </h2>
+            </div>
+            <button
+              type="button"
+              class="btn text-muted ms-3 rounded-pill py-0"
+              data-bs-toggle="collapse"
+              data-bs-target="#info6"
+              id="viewMoreBtn"
+            >
+              View More
+            </button>
+            <div class="collapse" id="info6">
+              <!-- Skills list: show a grey baseline with a coloured bar representing proficiency -->
+              <div class="skill-list mt-4">
+                <div class="skill-item">
+                  <p>HTML/CSS: Fundamental</p>
+                  <div
+                    class="progress"
+                    style="height: 4px; background-color: #e0e0e0"
+                  >
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 80%; background-color: #199cdb"
+                    ></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <p>Javascript: Intermediate</p>
+                  <div
+                    class="progress"
+                    style="height: 4px; background-color: #e0e0e0"
+                  >
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 70%; background-color: #199cdb"
+                    ></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <p>NodeJS: Intermediate</p>
+                  <div
+                    class="progress"
+                    style="height: 4px; background-color: #e0e0e0"
+                  >
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 60%; background-color: #199cdb"
+                    ></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <p>Bootstrap 5: Fundamental</p>
+                  <div
+                    class="progress"
+                    style="height: 4px; background-color: #e0e0e0"
+                  >
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 50%; background-color: #199cdb"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
 
       <!-- Certificates Section -->
       <section id="certificates" class="mb-5">
@@ -399,8 +543,7 @@
             <div class="certificate-item d-flex p-3">
               <div class="certificate-image">
                 <img
-                  src="https://videos.openai.com/vg-assets/assets%2Ftask_01k2hq9cshfzevk6m44xzfh3ax%2F1755089076_img_0.webp?st=2025-08-13T11%3A19%3A26Z&se=2025-08-19T12%3A19%3A26Z&sks=b&skt=2025-08-13T11%3A19%3A26Z&ske=2025-08-19T12%3A19%3A26Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=3d249c53-07fa-4ba4-9b65-0bf8eb4ea46a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=zbxd41bufxlwiPtuSs9qDVA13XDcmr6D5S%2BziZTL6XA%3D&az=oaivgprodscus"
-                  alt="Chứng chỉ lập trình Web – FUNiX"
+                  src="https://videos.openai.com/vg-assets/assets%2Ftask_01k3z2z6h1eny9ktj83gwf98x6%2F1756611270_img_1.webp?st=2025-08-31T02%3A15%3A21Z&se=2025-09-06T03%3A15%3A21Z&sks=b&skt=2025-08-31T02%3A15%3A21Z&ske=2025-09-06T03%3A15%3A21Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=5e5fc900-07cf-43e7-ab5b-314c0d877bb0&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=q0iH%2BYIfj3txLUEhSZPctFr%2BHTMUoB%2BmPSGT%2B0aaxq4%3D&az=oaivgprodscus"
                   class="img-fluid"
                 />
               </div>
@@ -416,7 +559,7 @@
             <div class="certificate-item d-flex p-3">
               <div class="certificate-image">
                 <img
-                  src="https://videos.openai.com/vg-assets/assets%2Ftask_01k2hq9rzqfjev1wkw6way0y5a%2F1755089087_img_1.webp?st=2025-08-13T11%3A19%3A26Z&se=2025-08-19T12%3A19%3A26Z&sks=b&skt=2025-08-13T11%3A19%3A26Z&ske=2025-08-19T12%3A19%3A26Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=3d249c53-07fa-4ba4-9b65-0bf8eb4ea46a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=XSqs8IPqHqdaLrOdhoEs%2Bf5vEDDn5rMgkGn9MFIwtco%3D&az=oaivgprodscus"
+                  src="https://videos.openai.com/vg-assets/assets%2Ftask_01k3z2z6h1eny9ktj83gwf98x6%2F1756611270_img_1.webp?st=2025-08-31T02%3A15%3A21Z&se=2025-09-06T03%3A15%3A21Z&sks=b&skt=2025-08-31T02%3A15%3A21Z&ske=2025-09-06T03%3A15%3A21Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=5e5fc900-07cf-43e7-ab5b-314c0d877bb0&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=q0iH%2BYIfj3txLUEhSZPctFr%2BHTMUoB%2BmPSGT%2B0aaxq4%3D&az=oaivgprodscus"
                   alt="Chứng chỉ lập trình JavaScript – FUNiX"
                   class="img-fluid"
                 />
@@ -439,7 +582,7 @@
             <div class="certificate-item d-flex p-3">
               <div class="certificate-image">
                 <img
-                  src="https://videos.openai.com/vg-assets/assets%2Ftask_01k2hq9rzqfjev1wkw6way0y5a%2F1755089087_img_0.webp?st=2025-08-13T11%3A19%3A26Z&se=2025-08-19T12%3A19%3A26Z&sks=b&skt=2025-08-13T11%3A19%3A26Z&ske=2025-08-19T12%3A19%3A26Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=3d249c53-07fa-4ba4-9b65-0bf8eb4ea46a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=87qxxt4iOihEbnVh%2FMnMoGPX4L1K4RuUxYCw7J%2BDpLk%3D&az=oaivgprodscus"
+                  src="https://videos.openai.com/vg-assets/assets%2Ftask_01k3z2z6h1eny9ktj83gwf98x6%2F1756611270_img_0.webp?st=2025-08-31T02%3A15%3A21Z&se=2025-09-06T03%3A15%3A21Z&sks=b&skt=2025-08-31T02%3A15%3A21Z&ske=2025-09-06T03%3A15%3A21Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=5e5fc900-07cf-43e7-ab5b-314c0d877bb0&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=dM4%2Bocw8DRrhJwpfPT0adaKpOI%2BFM4dp6pgomIqpjH8%3D&az=oaivgprodscus"
                   alt="Chứng chỉ thiết kế Database – FUNiX"
                   class="img-fluid"
                 />
@@ -464,8 +607,7 @@
           <div class="col-md-4">
             <div class="card h-100 project-card">
               <img
-                src="https://videos.openai.com/vg-assets/assets%2Ftask_01k1ap2knrez0a1nzspyy3cw9j%2F1753779185_img_0_thumb.webp?st=2025-08-13T11%3A19%3A26Z&se=2025-08-19T12%3A19%3A26Z&sks=b&skt=2025-08-13T11%3A19%3A26Z&ske=2025-08-19T12%3A19%3A26Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=3d249c53-07fa-4ba4-9b65-0bf8eb4ea46a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=pKWY20xOdAJj2uS%2BaHHgy%2FHgCUFDRDT%2FZjDOxnDppN8%3D&az=oaivgprodscus"
-                class="card-img-top"
+                src="https://videos.openai.com/vg-assets/assets%2Ftask_01k1ap2knrez0a1nzspyy3cw9j%2F1753779185_img_0.webp?st=2025-08-31T02%3A05%3A56Z&se=2025-09-06T03%3A05%3A56Z&sks=b&skt=2025-08-31T02%3A05%3A56Z&ske=2025-09-06T03%3A05%3A56Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=5e5fc900-07cf-43e7-ab5b-314c0d877bb0&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=kTK7I4sU4rI%2FNSWg2z0iWrXfD1MLiP02WuCrA6bIKhI%3D&az=oaivgprodscus"
                 alt="CV cá nhân"
               />
               <div class="card-body">
@@ -486,11 +628,6 @@
                 <!-- Hidden details for the project.  Clicking the card toggles this section. -->
                 <div class="project-details d-none">
                   <hr />
-                  <p class="small text-muted mb-0">
-                    Phiên bản cập nhật của CV đang đọc được lưu trữ online. Các
-                    yêu cầu về thiết kế responsive, tính năng ẩn thông tin và
-                    chương mục dự án đều được thực hiện.
-                  </p>
                 </div>
               </div>
             </div>
@@ -499,7 +636,7 @@
           <div class="col-md-4">
             <div class="card h-100 project-card">
               <img
-                src="https://videos.openai.com/vg-assets/assets%2Ftask_01k2ykbqr5fpd9d8y75t68hv4c%2F1755521155_img_0.webp?st=2025-08-18T11%3A08%3A56Z&se=2025-08-24T12%3A08%3A56Z&sks=b&skt=2025-08-18T11%3A08%3A56Z&ske=2025-08-24T12%3A08%3A56Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=3d249c53-07fa-4ba4-9b65-0bf8eb4ea46a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=cd1EqIpHiNrY8QmBfnJNzj%2FMdD52F8NchGOtjJvypRY%3D&az=oaivgprodscus"
+                src="https://videos.openai.com/vg-assets/assets%2Ftask_01k2ykbqr5fpd9d8y75t68hv4c%2F1755521155_img_1.webp?st=2025-08-31T02%3A05%3A56Z&se=2025-09-06T03%3A05%3A56Z&sks=b&skt=2025-08-31T02%3A05%3A56Z&ske=2025-09-06T03%3A05%3A56Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=5e5fc900-07cf-43e7-ab5b-314c0d877bb0&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=SerQI3nZ1BwO%2BK7iQIaZ7fAtp6QPUvx4lR2V2w2mWm4%3D&az=oaivgprodscus"
                 class="card-img-top"
                 alt="Trang web quản lý thú cưng"
               />
@@ -520,11 +657,6 @@
                 </p>
                 <div class="project-details d-none">
                   <hr />
-                  <p class="small text-muted mb-0">
-                    Dự án quản lý thú cưng cho phép người dùng thêm mới, sửa và
-                    xóa dữ liệu thú cưng. Giao diện thân thiện với nhiều biểu đồ
-                    trực quan.
-                  </p>
                 </div>
               </div>
             </div>
@@ -533,7 +665,7 @@
           <div class="col-md-4">
             <div class="card h-100 project-card">
               <img
-                src="https://videos.openai.com/vg-assets/assets%2Ftask_01k1apjn1ef97ss3xgr1rnzh7j%2F1753779738_img_0_thumb.webp?st=2025-08-13T11%3A19%3A26Z&se=2025-08-19T12%3A19%3A26Z&sks=b&skt=2025-08-13T11%3A19%3A26Z&ske=2025-08-19T12%3A19%3A26Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=3d249c53-07fa-4ba4-9b65-0bf8eb4ea46a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=XNzhOHEgJsFpNaCg9ErLd49M1xDQN7EuYvfS1K2c1bo%3D&az=oaivgprodscus"
+                src="https://videos.openai.com/vg-assets/assets%2Ftask_01k1apjn1ef97ss3xgr1rnzh7j%2F1753779738_img_1.webp?st=2025-08-31T02%3A05%3A56Z&se=2025-09-06T03%3A05%3A56Z&sks=b&skt=2025-08-31T02%3A05%3A56Z&ske=2025-09-06T03%3A05%3A56Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=5e5fc900-07cf-43e7-ab5b-314c0d877bb0&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=NlFqsQnWoNj%2B6fhBOLnMbzyCQe9i4bW4hvoWTzFMVLA%3D&az=oaivgprodscus"
                 class="card-img-top"
                 alt="Trang web xem tin tức"
               />
@@ -554,11 +686,6 @@
                 </p>
                 <div class="project-details d-none">
                   <hr />
-                  <p class="small text-muted mb-0">
-                    Dự án sử dụng API nguồn tin để cập nhật liên tục các bài báo
-                    mới. Người xem có thể lọc theo chuyên mục và tìm kiếm nội
-                    dung.
-                  </p>
                 </div>
               </div>
             </div>
